@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 export default function HomePage() {
   return (
     <main className="mx-auto max-w-6xl px-4 py-10">
@@ -9,6 +10,8 @@ export default function HomePage() {
   );
 }
 =======
+=======
+>>>>>>> f29dfc9e7965f51864b82425d6e08c500f233b50
 "use client";
 
 import { useState } from "react";
@@ -493,4 +496,7 @@ export default function DataMiningQuiz() {
   );
 }
 
+<<<<<<< HEAD
 >>>>>>> aee5d243a0b12036b56da34aeb7709f2d9feacd5
+=======
+>>>>>>> f29dfc9e7965f51864b82425d6e08c500f233b50
