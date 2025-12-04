@@ -7,6 +7,7 @@ export default function HeaderTW() {
     { label: "Home", href: "/" },
     { label: "Quiz", href: "/quiz" },
     { label: "Summary", href: "/summary" },
+    { label: "WordCard", href: "/wordcard" },
   ];
 
   return (
