@@ -5,8 +5,8 @@ import Link from "next/link";
 export default function HeaderTW() {
   const tabs = [
     { label: "Home", href: "/" },
-    { label: "Quiz", href: "/quiz" },
     { label: "Summary", href: "/summary" },
+    { label: "Quiz", href: "/quiz" }, 
   ];
 
   return (
