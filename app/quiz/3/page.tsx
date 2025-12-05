@@ -481,8 +481,3 @@ export default function DataMiningQuiz() {
     </main>
   );
 }
-
-<<<<<<< HEAD
->>>>>>> aee5d243a0b12036b56da34aeb7709f2d9feacd5
-=======
->>>>>>> f29dfc9e7965f51864b82425d6e08c500f233b50
