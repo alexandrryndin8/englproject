@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-export default function HomePage() {
-  return (
-    <main className="mx-auto max-w-6xl px-4 py-10">
-      <div className="grid gap-8 md:grid-cols-2 md:items-center">
-        <h1>Quiz</h1>
-      </div>
-    </main>
-  );
-}
-=======
-=======
->>>>>>> f29dfc9e7965f51864b82425d6e08c500f233b50
 "use client";
 
 import { useState } from "react";
