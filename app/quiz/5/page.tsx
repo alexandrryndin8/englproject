@@ -6,78 +6,78 @@ import Link from "next/link";
 const multipleChoiceQuestions = [
   {
     id: 1,
-    question: "What is cloud computing?",
+    question: "What is NOT true about natural language processing (NLP)?",
     options: [
-      { key: "a", text: "A method of storing files on local devices only" },
-      { key: "b", text: "A way to deliver computing services over the internet" },
-      { key: "c", text: "A protocol for secure email communication" },
-      { key: "d", text: "A programming language for mobile apps" },
+      { key: "a", text: "Spam detection makes a thorough analysis of the message and then decides if it's junk or not" },
+      { key: "b", text: "Current approaches to NLP are based on machine learning" },
+      { key: "c", text: "NLP tasks include IT automation" },
+      { key: "d", text: "NLP processes human language by computer programs" },
     ],
-    correct: "b",
+    correct: "c",
   },
   {
     id: 2,
-    question: "Which of the following is NOT a type of cloud service?",
+    question: "What is NOT true about machine learning?",
     options: [
-      { key: "a", text: "IaaS (Infrastructure as a Service)" },
-      { key: "b", text: "PaaS (Platform as a Service)" },
-      { key: "c", text: "SaaS (Software as a Service)" },
-      { key: "d", text: "CaaS (Cloud as a Service)" },
+      { key: "a", text: "In unsupervised learning data sets are sorted according to their similarities not differences" },
+      { key: "b", text: "Machine learning teaches computers to perform like humans" },
+      { key: "c", text: "The AI system is given feedback after performing an action in reinforcement learning" },
+      { key: "d", text: "In supervised learning, data sets are labeled" },
     ],
-    correct: "d",
+    correct: "a",
   },
   {
     id: 3,
-    question: "What does scalability in cloud computing mean?",
+    question: "What is NOT true about robotics?",
     options: [
-      { key: "a", text: "Ability to run software offline" },
-      { key: "b", text: "Ability to increase or decrease resources on demand" },
-      { key: "c", text: "Ability to encrypt all user data" },
-      { key: "d", text: "Ability to back up files locally" },
+      { key: "a", text: "Robotics is a field of engineering focused on the design and manufacturing of robots" },
+      { key: "b", text: "Robots help humans to perform tasks that are difficult for them" },
+      { key: "c", text: "It's impossible to build robots that can interact in social settings" },
+      { key: "d", text: "Robots are used in assembly lines for car production" },
     ],
-    correct: "b",
+    correct: "c",
   },
   {
     id: 4,
-    question: "Which cloud deployment model is available to the general public?",
+    question: "What is NOT true about machine vision?",
     options: [
-      { key: "a", text: "Private cloud" },
-      { key: "b", text: "Public cloud" },
-      { key: "c", text: "Hybrid cloud" },
-      { key: "d", text: "Community cloud" },
+      { key: "a", text: "Machine vision captures and analyzes visual information" },
+      { key: "b", text: "Machine vision is used only in security applications" },
+      { key: "c", text: "Machine vision can be programmed to see through walls" },
+      { key: "d", text: "Machine vision isn't bound by biology" },
     ],
     correct: "b",
   },
   {
     id: 5,
-    question: "Which benefit is commonly associated with cloud computing?",
+    question: "What is artificial intelligence?",
     options: [
-      { key: "a", text: "Unlimited local storage without internet" },
-      { key: "b", text: "Access to resources from anywhere with internet" },
-      { key: "c", text: "Automatic hardware repair" },
-      { key: "d", text: "Faster CPU speeds on all devices" },
+      { key: "a", text: "A type of computer hardware" },
+      { key: "b", text: "The simulation of human intelligence processes by computer systems" },
+      { key: "c", text: "A programming language for robots" },
+      { key: "d", text: "A method of data storage" },
     ],
     correct: "b",
   },
   {
     id: 6,
-    question: "What is multi-tenancy in cloud computing?",
+    question: "Why has AI gained prominence recently?",
     options: [
-      { key: "a", text: "Sharing the same infrastructure among multiple users" },
-      { key: "b", text: "Using multiple CPUs in a server" },
-      { key: "c", text: "Encrypting data with multiple keys" },
-      { key: "d", text: "Running multiple operating systems on one machine" },
+      { key: "a", text: "Due to decreasing computer prices" },
+      { key: "b", text: "Due to big data — the increase in speed, size and variety of data" },
+      { key: "c", text: "Due to new programming languages" },
+      { key: "d", text: "Due to faster internet connections only" },
     ],
-    correct: "a",
+    correct: "b",
   },
   {
     id: 7,
-    question: "Which statement describes the reliability of cloud services?",
+    question: "What makes RPA different from IT automation?",
     options: [
-      { key: "a", text: "Cloud services never experience downtime" },
-      { key: "b", text: "Cloud services can offer high availability with backups and redundancy" },
-      { key: "c", text: "Cloud services are always slower than local computers" },
-      { key: "d", text: "Cloud services do not require security measures" },
+      { key: "a", text: "RPA is slower than IT automation" },
+      { key: "b", text: "RPA can adapt to changing circumstances" },
+      { key: "c", text: "RPA doesn't require programming" },
+      { key: "d", text: "RPA can only perform simple tasks" },
     ],
     correct: "b",
   },
@@ -86,40 +86,40 @@ const multipleChoiceQuestions = [
 const trueFalseQuestions = [
   {
     id: 8,
-    question: "Cloud computing allows users to access resources via the internet.",
+    question: "AI processes include learning, reasoning, and self-correction.",
     correct: true,
   },
   {
     id: 9,
-    question: "Private clouds are shared with the general public.",
+    question: "In unsupervised learning, data sets are labeled so patterns can be detected.",
     correct: false,
   },
   {
     id: 10,
-    question: "Hybrid cloud combines private and public cloud environments.",
-    correct: true,
+    question: "Machine vision is bound by biology like human eyesight.",
+    correct: false,
   },
   {
     id: 11,
-    question: "Cloud computing automatically makes all data completely secure.",
-    correct: false,
+    question: "Researchers use machine learning to build robots that can interact in social settings.",
+    correct: true,
   },
 ];
 
 const matchingTerms = [
-  { id: 1, term: "IaaS" },
-  { id: 2, term: "SaaS" },
-  { id: 3, term: "PaaS" },
-  { id: 4, term: "Public cloud" },
-  { id: 5, term: "Hybrid cloud" },
+  { id: 1, term: "Artificial Intelligence" },
+  { id: 2, term: "Supervised Learning" },
+  { id: 3, term: "Machine Vision" },
+  { id: 4, term: "NLP" },
+  { id: 5, term: "Automation" },
 ];
 
 const matchingDefinitions = [
-  { key: "A", text: "Provides infrastructure like virtual machines and storage." },
-  { key: "B", text: "Software delivered over the internet, like Gmail or Office 365." },
-  { key: "C", text: "Platform for developers to build and deploy applications." },
-  { key: "D", text: "Cloud resources accessible to anyone over the internet." },
-  { key: "E", text: "A combination of public and private cloud resources." },
+  { key: "A", text: "The simulation of human intelligence processes by computer systems." },
+  { key: "B", text: "Machine learning where data sets are labeled so patterns can be detected." },
+  { key: "C", text: "Captures and analyzes visual information using cameras and digital processing." },
+  { key: "D", text: "Processing of human language by a computer program (spam detection, translation)." },
+  { key: "E", text: "The process of making a system or process function automatically." },
 ];
 
 const correctMatching: Record<number, string> = {
@@ -130,7 +130,7 @@ const correctMatching: Record<number, string> = {
   5: "E",
 };
 
-export default function BigDataQuiz() {
+export default function ArtificialIntelligenceQuiz() {
   const [mcAnswers, setMcAnswers] = useState<Record<number, string>>({});
   const [tfAnswers, setTfAnswers] = useState<Record<number, boolean | null>>({});
   const [matchAnswers, setMatchAnswers] = useState<Record<number, string>>({});
@@ -215,13 +215,13 @@ export default function BigDataQuiz() {
           ← Back to units
         </Link>
         <div className="mt-4 inline-flex items-center rounded-full border border-cyan-500/30 bg-cyan-500/10 px-3 py-1 text-xs text-cyan-400">
-          Unit 6
+          Unit 5
         </div>
         <h1 className="mt-4 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-          Biometric Authentication
+          Artificial Intelligence
         </h1>
         <p className="mt-2 text-zinc-400">
-          Answer using the information from the unit text (3Vs, snapshots, and key ideas).
+          Test your knowledge about AI, machine learning, NLP, and robotics.
         </p>
       </div>
 

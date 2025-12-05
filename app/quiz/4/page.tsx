@@ -6,78 +6,78 @@ import Link from "next/link";
 const multipleChoiceQuestions = [
   {
     id: 1,
-    question: "What is data security?",
+    question: "What is NOT true about cloud technology services?",
     options: [
-      { key: "a", text: "The process of deleting all user data regularly" },
-      { key: "b", text: "Measures taken to protect data from unauthorized access" },
-      { key: "c", text: "A method of storing information offline only" },
-      { key: "d", text: "A tool for testing network speed" },
+      { key: "a", text: "Cloud computing services can be private, public and hybrid" },
+      { key: "b", text: "Cloud technology services cover only standard office applications" },
+      { key: "c", text: "Cloud providers normally charge for cloud computing services based on usage" },
+      { key: "d", text: "Cloud technology services include AI and natural language processing" },
     ],
     correct: "b",
   },
   {
     id: 2,
-    question: "Which type of attack attempts to trick users through fake messages?",
+    question: "What is NOT true about the types of cloud services?",
     options: [
-      { key: "a", text: "Phishing" },
-      { key: "b", text: "Encryption" },
-      { key: "c", text: "Backup recovery" },
-      { key: "d", text: "Cloud synchronization" },
+      { key: "a", text: "The customers of public cloud services pay for the CPU cycles through IT chargeback" },
+      { key: "b", text: "Private cloud services are delivered from a company's data center to both internal and external users" },
+      { key: "c", text: "A hybrid cloud service is a combination of public cloud services and an on-premises private cloud" },
+      { key: "d", text: "Both A and B are incorrect statements" },
+    ],
+    correct: "d",
+  },
+  {
+    id: 3,
+    question: "What is NOT true about cloud technologies architecture?",
+    options: [
+      { key: "a", text: "Back end is the 'visual' part of a cloud technologies architecture" },
+      { key: "b", text: "Cloud technologies architecture includes various components and sub-components" },
+      { key: "c", text: "Cloud technologies architecture can be classified into two sections: front-end and back-end" },
+      { key: "d", text: "Front end is the visible interface that users encounter" },
     ],
     correct: "a",
   },
   {
-    id: 3,
-    question: "What is encryption used for?",
-    options: [
-      { key: "a", text: "Compressing files" },
-      { key: "b", text: "Transforming data to protect it from unauthorized access" },
-      { key: "c", text: "Deleting malware" },
-      { key: "d", text: "Resetting passwords" },
-    ],
-    correct: "b",
-  },
-  {
     id: 4,
-    question: "Which security principle means giving access only when necessary?",
+    question: "What is NOT true about public cloud security?",
     options: [
-      { key: "a", text: "Zero Trust" },
-      { key: "b", text: "Least privilege" },
-      { key: "c", text: "Data mining" },
-      { key: "d", text: "Cloud routing" },
+      { key: "a", text: "Public cloud is a multi-tenant environment" },
+      { key: "b", text: "Access to public cloud storage cannot be guarded by account login credentials" },
+      { key: "c", text: "Security remains a primary concern for businesses thinking about public cloud adoption" },
+      { key: "d", text: "Public cloud providers share hardware infrastructure between numerous customers" },
     ],
     correct: "b",
   },
   {
     id: 5,
-    question: "What is multi-factor authentication?",
+    question: "How do cloud providers typically charge for their services?",
     options: [
-      { key: "a", text: "Logging in using only username" },
-      { key: "b", text: "Using two or more methods to verify identity" },
-      { key: "c", text: "A process of sending data to cloud" },
-      { key: "d", text: "Scanning networks for errors" },
+      { key: "a", text: "A fixed monthly fee regardless of usage" },
+      { key: "b", text: "Based on usage, similar to water or electricity bills" },
+      { key: "c", text: "A one-time payment for lifetime access" },
+      { key: "d", text: "Free of charge for all users" },
     ],
     correct: "b",
   },
   {
     id: 6,
-    question: "What does a firewall do?",
+    question: "What is the goal of a hybrid cloud?",
     options: [
-      { key: "a", text: "Deletes illegal files" },
-      { key: "b", text: "Filters network traffic to block threats" },
-      { key: "c", text: "Improves Wi-Fi connection" },
-      { key: "d", text: "Monitors social media accounts" },
+      { key: "a", text: "To replace all private cloud services" },
+      { key: "b", text: "To eliminate the need for security measures" },
+      { key: "c", text: "To create a unified, automated, scalable environment while maintaining control over mission-critical data" },
+      { key: "d", text: "To reduce the cost of electricity" },
     ],
-    correct: "b",
+    correct: "c",
   },
   {
     id: 7,
-    question: "Which example describes ransomware?",
+    question: "What does the back-end of cloud architecture comprise?",
     options: [
-      { key: "a", text: "A tool for cloud storage" },
-      { key: "b", text: "Malware that encrypts data and demands payment" },
-      { key: "c", text: "A safe backup archive" },
-      { key: "d", text: "A type of browser extension" },
+      { key: "a", text: "Only the user interface" },
+      { key: "b", text: "Metal servers, data storage, virtual machines, security mechanisms, and services" },
+      { key: "c", text: "Only the web browser" },
+      { key: "d", text: "Only login credentials" },
     ],
     correct: "b",
   },
@@ -86,51 +86,51 @@ const multipleChoiceQuestions = [
 const trueFalseQuestions = [
   {
     id: 8,
-    question: "Data security protects information from unauthorized access.",
+    question: "Private cloud services are delivered from a business's data center to internal users.",
     correct: true,
   },
   {
     id: 9,
-    question: "Phishing attacks often use fake emails or websites.",
-    correct: true,
+    question: "In the public cloud model, customers pay for all resources regardless of actual consumption.",
+    correct: false,
   },
   {
     id: 10,
-    question: "Encryption makes data unreadable without the proper key.",
+    question: "Front-end is the visible interface that computer users encounter through web-enabled client devices.",
     correct: true,
   },
   {
     id: 11,
-    question: "Backing up data is not part of data security.",
+    question: "Public cloud is a single-tenant environment where hardware is not shared between customers.",
     correct: false,
   },
 ];
 
 const matchingTerms = [
-  { id: 1, term: "Encryption" },
-  { id: 2, term: "Phishing" },
-  { id: 3, term: "Firewall" },
-  { id: 4, term: "MFA" },
-  { id: 5, term: "Ransomware" },
+  { id: 1, term: "Cloud providers" },
+  { id: 2, term: "Hybrid cloud" },
+  { id: 3, term: "Front-end" },
+  { id: 4, term: "Back-end" },
+  { id: 5, term: "Multi-tenant environment" },
 ];
 
 const matchingDefinitions = [
-  { key: "A", text: "Malware that blocks access to data and requires payment." },
-  { key: "B", text: "Deceptive messages used to steal credentials." },
-  { key: "C", text: "Security method using two or more verification steps." },
-  { key: "D", text: "A system that protects network traffic from threats." },
-  { key: "E", text: "Process of transforming data into unreadable form." },
+  { key: "A", text: "Companies that offer and charge for cloud computing services based on usage." },
+  { key: "B", text: "A combination of public cloud services and an on-premises private cloud." },
+  { key: "C", text: "The visible interface that users encounter through web-enabled devices." },
+  { key: "D", text: "The 'cloud' part comprising servers, storage, VMs, and security mechanisms." },
+  { key: "E", text: "An environment where hardware infrastructure is shared between numerous customers." },
 ];
 
 const correctMatching: Record<number, string> = {
-  1: "E",
+  1: "A",
   2: "B",
-  3: "D",
-  4: "C",
-  5: "A",
+  3: "C",
+  4: "D",
+  5: "E",
 };
 
-export default function BigDataQuiz() {
+export default function CloudTechnologyQuiz() {
   const [mcAnswers, setMcAnswers] = useState<Record<number, string>>({});
   const [tfAnswers, setTfAnswers] = useState<Record<number, boolean | null>>({});
   const [matchAnswers, setMatchAnswers] = useState<Record<number, string>>({});
@@ -215,13 +215,13 @@ export default function BigDataQuiz() {
           ← Back to units
         </Link>
         <div className="mt-4 inline-flex items-center rounded-full border border-cyan-500/30 bg-cyan-500/10 px-3 py-1 text-xs text-cyan-400">
-          Unit 6
+          Unit 4
         </div>
         <h1 className="mt-4 text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-          Biometric Authentication
+          Cloud Technology
         </h1>
         <p className="mt-2 text-zinc-400">
-          Answer using the information from the unit text (3Vs, snapshots, and key ideas).
+          Test your knowledge about cloud computing services, architecture, and security.
         </p>
       </div>
 
